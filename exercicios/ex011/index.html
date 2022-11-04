@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML.</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abri esse site em dispositivos difernetes ou tente aumenta e diminuir o seu navegador.</p>
+
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagen flezivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a Reproduzindo audios em HTML5.</p>
+    <audio src="midias/X2Download.com - L7NNON & BIEL DO FURDUNCINHO - Ai Preto 🤤 (part. Bianca) (128 kbps).mp3" autoplay controls></audio>
+    <!-- MP3  WAV OGG -->
+
+    <!--Segundo exemplo-->
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midias/X2Download.com - L7NNON & BIEL DO FURDUNCINHO - Ai Preto 🤤 (part. Bianca) (128 kbps).mp3" type="audio/mpeg">
+        <source src="midias/X2Download.com - L7NNON & BIEL DO FURDUNCINHO - Ai Preto 🤤 (part. Bianca) (128 kbps).ogg" type="audio/ogg">
+        <source src="midias/X2Download.com - L7NNON & BIEL DO FURDUNCINHO - Ai Preto 🤤 (part. Bianca) (128 kbps).wav" type="audio/wav">
+        <p>Infelimento o seu navegador, não consegue reproduzindo audios <a href="midias/X2Download.com - L7NNON & BIEL DO FURDUNCINHO - Ai Preto 🤤 (part. Bianca) (128 kbps).mp3">clic aqui para baixar o audio MP3</a></p>
+    </audio>
+
+</body>
+</html>
