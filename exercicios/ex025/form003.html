@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testa formulario</title>
+</head>
+<body>
+    <!--O cogido min e max, são para o maximo e minimo de numero em uma caixa, step serve para determina a quantidade que você pode por de numero quebrado na caixa do formulario, "placeholder" serve para colocar um nome no campo do formulario e auxiliar o usuario a saber o campo correto para inserir as informações, "VOLUE" serve para determina a data e hora de hoje, "REQUIRED" serve para determina um campo obrigatorio para o usuario inserir as informações-->
+
+    <h1>Teste de formulario</h1>
+    <form action="Cadastro.php" method="post">
+    <p>
+        <label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+    </p>
+        <label for="imedia"></label>
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required value="5" required>
+    <p>
+    <p>
+        <label for="imes">Mês</label>
+        <input type="month" name="mes" id="imes" value="2022-12">
+    </p>
+    <p>
+        <label for="idia"></label>
+        <input type="date" name="dia" id="idia" value="2022-12-06">
+    </p>
+    <p>
+        <label for="ihora"></label>
+        <input type="time" name="hora" id="ihora">
+
+    </p>
+    <p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+    </form>
+</body>
+</html>
