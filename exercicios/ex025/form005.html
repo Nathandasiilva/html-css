@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="sxmas" value="M"> <label for="sxmas">Masculino</label>
+            <input type="radio" name="sexo" id="sxfem" checked value="F"> <label for="sxfem">Feminino</label>
+
+            <!--Todos os comados de RADIO deve ter o mesmo NAME, o codigo CHECKED sevre para deixa um conteúdo já marcado, o codigo LABEL serve para associa a caixa de escolhar junto com o nome da opção-->
+
+        </fieldset>
+      
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esbas" id="iesba"> <label for="iesba">Basquete</label> <br>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="esnata" id="iesnta"> <label for="iesnta">Natação</label> <br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+     </fieldset>
+     <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+     </p>
+        
+    </form>
+</body>
+</html>
